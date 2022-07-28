@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+}
+.container{
+    background: #fff;
+    border-radius: 10px;
+    width: 360px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+p{
+    color: #1e293b;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+    letter-spacing: 1px;
+}
+.app-title{
+    margin: 1rem 0;
+    
+}
+
+
+.weather-container{
+    text-align: center;
+    background: 
+    #f0f9ff;
+    width: inherit;
+    margin-bottom: 4.2rem;
+    
+}
+.temp{
+    cursor: pointer;
+}
+.temp p{
+    font-size: 4.5rem;
+}
+.temp span{
+    font-size: 2.5rem;
+}
+.description{
+    margin-top: 1rem;
+   
+}
+.location{
+    padding-bottom: 2rem;
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+    .container{
+        width: 100vw;
+        position: relative;
+    }
+    .app-title p {
+        font-size: 2rem;
+        
+        
+        
+    }
+    .app-title{
+        position: fixed;
+        top: 10%;
+        left: 50%; 
+        transform: translate(-50%, 0);
+    }
+    .weather-container{
+        margin-bottom: 3rem;
+
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    
+    .app-title{
+        top: 4%;
+      
+    }
+    
+  }
